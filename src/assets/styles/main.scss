@@ -1,3 +1,11 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+
+}
+
 @import "tailwindcss/utilities";
