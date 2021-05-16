@@ -4,9 +4,25 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      header: '9vh',
+      footer: '15vh'
+    },
+    minHeight: {
+      main: '76vh',
+    },
     extend: {
+      backgroundImage: {
+        'footer-bg': "url('../images/themetalband.png')"
+      },
       gridTemplateColumns: {
-        'headerCols': 'auto minmax(150px, 400px) auto minmax(300px, 600px) auto'
+        'headerCols': 'auto minmax(75px, 400px) auto minmax(150px, 600px) auto',
+        'mainCols': 'minmax(250px, 550px)',
+        'footerCols': 'minmax(550px, 1600px)'
+      },
+      gridTemplateRows:  {
+        'mainRows': 'minmax(250px, 550px) auto auto',
+        'footerRows': '1fr 1fr 1fr'
       }
     },
     fontFamily: {
