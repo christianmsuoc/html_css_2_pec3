@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <meta content="width=device-width, user-scalable=no" name="viewport">
+    <meta content="noindex" name="robots">
+    <link href="./assets/styles/main.scss" rel="stylesheet" type="text/css"><!-- do not remove this line! -->
+    <title>The Metalband</title>
+</head>
+
+<body class="flex flex-col flex-wrap md:m-0 bg-[#090909FF]">
+<header class="l-header-grid">
+    <div class="header-grid--logo">
+        <a href="./index.html">
+            <img alt="Logo of Themetalband" src="./assets/images/themetalband.png">
+        </a>
+    </div>
+    <nav class="header-grid--navbar">
+        <a href="band_members.html"> <i class="fas fa-users"></i> Band members </a>
+    </nav>
+</header>
+<main class="l-main-grid">
+    <div class="main-grid--content">
+        <div class="main-grid--band-image">
+            <img alt="Image of the band" src="./assets/images/band_portada.png">
+        </div>
+        <div class="main-grid--band-name">
+            <p>Cause alternative rocks!</p>
+        </div>
+
+        <div class="main-grid--band-links">
+            <p><a href="https://courses.wesbos.com/">Wesbos courses!</a></p>
+            <p>
+                <a href="https://www.smashingmagazine.com/2017/11/css-grid-supporting-browsers-without-grid/">
+                    Smashing magazine
+                </a>
+            </p>
+            <p><a href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag">Jen Simmons - Layout Land!</a></p>
+            <p><a href="https://caniuse.com/">Can I use?</a></p>
+        </div>
+    </div>
+</main>
+<footer class="l-footer-grid">
+    <div class="footer-grid--content">
+        <div class="footer-grid--content--contact-info">
+            <div class="footer-grid--content--contact-info--content">
+                <p>Get in touch with us in the address:
+                    <a href="mailto:Themetalband@metalband.com">Themetalband@metalband.com</a>
+                </p>
+                <p>Or use our form:
+                    <a href=""> Contact</a>
+                </p>
+            </div>
+            <div class="footer-grid--content--contact-info--separator">
+                <hr>
+            </div>
+        </div>
+        <div class="footer-grid--content--navbar">
+            <div class="footer-grid--content--navbar--logo"></div>
+            <div class="footer-grid--content--navbar--page-links">
+                <a class="active" href="./index.html"> <i class="fas fa-house-damage"></i> Home </a>
+                <a href="band_members.html"> <i class="fas fa-users"></i> Band members </a>
+            </div>
+            <div class="footer-grid--content--navbar--external-links">
+                <a href="https://www.google.com">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="https://www.facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
 </html>
