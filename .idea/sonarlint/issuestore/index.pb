@@ -15,5 +15,3 @@ A
 .postcssrc,4\5\455ce100b9e28d2b3ec65da51dcc803e7bfe5d0a
 A
 postcss.config.js,3\f\3f70684581fd16ab3be77ca959e0138ef3ee8bfb
-E
-src/band_members.html,a\b\ab6983eb4ee0aba00f257c397e3b7e6f15fe22c0

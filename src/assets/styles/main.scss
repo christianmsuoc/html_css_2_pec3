@@ -16,6 +16,10 @@
     }
   }
 
+  .grid-cols-band {
+    grid-template-columns: repeat(auto-fit , minmax(250px, 550px));
+  }
+
   .md\:grid-cols-main {
     @media (min-width: 768px) {
       grid-template-columns: minmax(250px, 550px);
@@ -52,12 +56,17 @@
     }
   }
 
+
+  .grid-rows-main {
+    grid-template-rows: minmax(250px, 550px) auto auto;
+  }
+
+
   .md\:grid-rows-main {
     @media (min-width: 768px) {
       grid-template-rows: minmax(250px, 550px) auto auto;
     }
   }
-
 }
 
 @import "tailwindcss/utilities";
@@ -70,4 +79,25 @@
   .link {
     @apply text-white hover:text-white-dark
   }
+
+  .active {
+    @apply text-charcoal-lighter
+  }
+
+  .band-member {
+    @apply grid grid-cols-1 justify-center justify-items-center items-center m-2 rounded-md py-3 px-5 w-10/12 bg-black-light
+  }
+
+  .band-member--name {
+    @apply text-charcoal-light text-xl mx-1 p-0 text-center
+  }
+
+  .band-member--position {
+    @apply mx-1 italic text-center
+  }
+
+  .band-member--phrase {
+    @apply m-0 p-0 text-xl text-center
+  }
+
 }

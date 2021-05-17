@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="grid box-border text-shadow-header font-normal font-roboto text-white m-0 p-0">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, user-scalable=no" name="viewport">
@@ -7,21 +7,29 @@
     <link href="./assets/styles/main.scss" rel="stylesheet" type="text/css"><!-- do not remove this line! -->
     <title>The Band members</title>
 </head>
-<body class="l-body-flex">
-<header class="l-header-flex">
-    <div class="header-flex--logo">
+<body class="grid w-full bg-black-normal justify-items-center content-center items-center m-0 p-0">
+<header class="md:h-header grid grid-cols-1 md:grid-cols-header md:justify-items-center w-full border-b">
+    <div class="hidden md:block"></div>
+    <div class="pt-1 pb-1">
         <a href="./index.html">
-            <img alt="Logo of Themetalband" src="./assets/images/themetalband.png">
+            <img class="object-fill w-10/12" alt="Logo of Themetalband" src="./assets/images/themetalband.png">
         </a>
     </div>
-    <nav class="header-flex--navbar">
-        <a class="active" href="band_members.html"> <i class="fas fa-users"></i> Band members </a>
+    <div class="hidden md:block"></div>
+    <nav class="grid gap-1 grid-cols-1 md:grid-cols-3 justify-items-center items-center pr-0">
+        <a class="text-xl link active" href="band_members.html">
+            <i class="fas fa-users link active"></i> Band members </a>
+        <a class="text-xl link" href="#">
+            <i class="fas fa-fist-raised link"></i> The band </a>
+        <a class="text-xl link" href="#">
+            <i class="fas fa-envelope link"></i> Contact </a>
     </nav>
+    <div class="hidden md:block"></div>
 </header>
-<main class="l-main-flex">
-    <section class="main-flex--content">
+<main class="grid justify-items-center gap-1.5 items-center w-full">
+    <section class="min-h-main w-full grid grid-cols-band mt-2 justify-center justify-items-center">
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="Morten Løwe Sørensen" src="assets/images/member1.png">
             </div>
             <p class="band-member--name">Morten Løwe Sørensen</p>
@@ -29,7 +37,7 @@
             <p class="band-member--phrase">Best drums of Denmark</p>
         </article>
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="Olof Mörck" src="assets/images/member2.png">
             </div>
             <p class="band-member--name">Olof Mörck</p>
@@ -37,7 +45,7 @@
             <p class="band-member--phrase">Multi-faceted musician</p>
         </article>
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="Henrik Englund Wilhelmsson" src="assets/images/member3.png">
             </div>
             <p class="band-member--name">Henrik Englund Wilhelmsson</p>
@@ -45,7 +53,7 @@
             <p class="band-member--phrase">Voice of the afterlife</p>
         </article>
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="" src="assets/images/member4.png">
             </div>
             <p class="band-member--name">Elize Ryd</p>
@@ -53,7 +61,7 @@
             <p class="band-member--phrase">Frontwoman & Songwriter!</p>
         </article>
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="" src="assets/images/member5.png">
             </div>
             <p class="band-member--name">Johan Andreassen</p>
@@ -61,7 +69,7 @@
             <p class="band-member--phrase">From the deep!</p>
         </article>
         <article class="band-member">
-            <div class="band-member--image">
+            <div class="w-12/12">
                 <img alt="" src="assets/images/member6.png">
 
             </div>
@@ -71,10 +79,10 @@
         </article>
     </section>
 </main>
-<footer class="l-footer-flex">
-    <div class="footer-flex--content">
-        <div class="footer-flex--content--contact-info">
-            <div class="footer-flex--content--contact-info--content">
+<footer class="grid w-full  bg-charcoal-dark text-shadow-footer">
+    <div class="grid h-full md:h-footer w-full md:grid-cols-footer md:grid-rows-footer justify-center justify-items-center">
+        <div class="grid w-full h-full">
+            <div class="grid w-full h-full text-center items-center">
                 <p>Get in touch with us in the address:
                     <a href="mailto:Themetalband@metalband.com">Themetalband@metalband.com</a>
                 </p>
@@ -82,25 +90,33 @@
                     <a href=""> Contact</a>
                 </p>
             </div>
-            <div class="footer-flex--content--contact-info--separator">
+            <div class="w-full self-center">
                 <hr>
             </div>
         </div>
-        <div class="footer-flex--content--navbar">
-            <div class="footer-flex--content--navbar--logo"></div>
-            <div class="footer-flex--content--navbar--page-links">
-                <a href="./index.html"> <i class="fas fa-house-damage"></i> Home </a>
-                <a class="active" href="band_members.html"> <i class="fas fa-users"></i> Band members </a>
+        <div class="grid w-full h-full gap-0.5 md:grid-cols-footer-navbar">
+            <div class="h-100 w-100 bg-footer-bg bg-contain bg-no-repeat"></div>
+            <div
+                class="grid md:gap-16 w-full h-full md:grid-cols-footer-links items-center justify-items-center p-0 text-lg">
+                <a class="text-charcoal-lighter" href="./index.html">
+                    <i class="fas fa-house-damage icon-link"></i> Home </a>
+                <a href="band_members.html" class="link">
+                    <i class="fas fa-users icon-link"></i> Band members </a>
+                <a href="#" class="link">
+                    <i class="fas fa-fist-raised icon-link"></i> The band </a>
+                <a href="#" class="link">
+                    <i class="fas fa-envelope icon-link"></i> Contact </a>
             </div>
-            <div class="footer-flex--content--navbar--external-links">
-                <a href="https://www.google.com">
-                    <i class="fab fa-google-plus-g"></i>
+            <div
+                class="grid grid-cols-3 md:grid-cols-footer-social text-lg p-5 md:gap-x-4 lg:gap-x-12 md:justify-self-end md:justify-items-end">
+                <a class="justify-self-center md:justify-self-end self-center w-auto" href="https://www.google.com">
+                    <i class="fab fa-google-plus-g icon-link"></i>
                 </a>
-                <a href="https://www.facebook.com">
-                    <i class="fab fa-facebook-f"></i>
+                <a class=" justify-self-center md:justify-self-end self-center w-auto" href="https://www.facebook.com">
+                    <i class="fab fa-facebook-f icon-link"></i>
                 </a>
-                <a href="https://www.twitter.com">
-                    <i class="fab fa-twitter"></i>
+                <a class=" justify-self-center md:justify-self-end self-center w-auto" href="https://www.twitter.com">
+                    <i class="fab fa-twitter icon-link"></i>
                 </a>
             </div>
         </div>
