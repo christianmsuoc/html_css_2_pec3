@@ -4,6 +4,12 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     height: {
       header: '9vh',
       footer: '15vh'
@@ -14,18 +20,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         'footer-bg': "url('../images/themetalband.png')"
-      },
-      gridTemplateColumns: {
-        'md-header': '1fr minmax(75px, 400px) 1fr minmax(150px, 600px) 1fr',
-        'md-main': 'minmax(250px, 550px)',
-        'md-footer': 'minmax(250px, 1600px)',
-        'md-footer-navbar': '1fr auto 1fr',
-        'md-footer-links': 'auto auto auto auto',
-        'md-footer-social': 'max-content max-content max-content'
-      },
-      gridTemplateRows: {
-        'md-main-rows': 'minmax(250px, 550px) auto auto',
-        'md-footer-rows': '2fr 1fr'
       }
     },
     fontFamily: {

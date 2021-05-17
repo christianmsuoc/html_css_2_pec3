@@ -9,26 +9,26 @@
 </head>
 
 <body class="grid w-full bg-black-normal justify-items-center content-center items-center m-0 p-0">
-<header class="h-header grid grid-cols-md-header justify-items-center w-full">
-    <div class="template-dot"></div>
+<header class="md:h-header grid grid-cols-1 md:grid-cols-header md:justify-items-center w-full">
+    <div class="hidden md:block"></div>
     <div class="pt-1 pb-1">
         <a href="./index.html">
-            <img class="object-cover w-8/12" alt="Logo of Themetalband" src="./assets/images/themetalband.png">
+            <img class="object-fill w-full" alt="Logo of Themetalband" src="./assets/images/themetalband.png">
         </a>
     </div>
-    <div class="template-dot"></div>
-    <nav class="grid gap-1 grid-cols-3 justify-items-center items-center pr-0">
-        <a class="text-xl hover:text-white-dark" href="band_members.html">
-            <i class="fas fa-users hover:text-white-dark"></i> Band members </a>
-        <a class="text-xl hover:text-white-dark" href="#">
-            <i class="fas fa-fist-raised hover:text-white-dark"></i> The band </a>
-        <a class="text-xl hover:text-white-dark" href="#">
-            <i class="fas fa-envelope hover:text-white-dark"></i> Contact </a>
+    <div class="hidden md:block"></div>
+    <nav class="grid gap-1 grid-cols-1 md:grid-cols-3 justify-items-center items-center pr-0">
+        <a class="text-xl link" href="band_members.html">
+            <i class="fas fa-users link"></i> Band members </a>
+        <a class="text-xl link" href="#">
+            <i class="fas fa-fist-raised link"></i> The band </a>
+        <a class="text-xl link" href="#">
+            <i class="fas fa-envelope link"></i> Contact </a>
     </nav>
-    <div class="template-dot"></div>
+    <div class="hidden md:block"></div>
 </header>
 <main class="grid grid-cols-1 grid-rows-1 justify-items-center items-center mt-auto w-full ">
-    <div class="min-h-main grid grid-cols-md-main grid-rows-md-main gap-1.5 justify-center justify-items-center w-full">
+    <div class="min-h-main grid md:grid-cols-main md:grid-rows-main gap-1.5 justify-center justify-items-center w-full">
         <div class="self-end">
             <img class="w-full rounded" alt="Image of the band" src="./assets/images/band_portada.png">
         </div>
@@ -37,22 +37,23 @@
         </div>
 
         <div class="text-center self-start">
-            <p class="m-4"><a class="hover:text-white-dark" href="https://courses.wesbos.com/">Wesbos courses!</a></p>
+            <p class="m-4"><a class="link" href="https://courses.wesbos.com/">Wesbos courses!</a></p>
             <p class="m-4">
-                <a class="hover:text-white-dark" href="https://www.smashingmagazine.com/2017/11/css-grid-supporting-browsers-without-grid/">
+                <a class="link"
+                   href="https://www.smashingmagazine.com/2017/11/css-grid-supporting-browsers-without-grid/">
                     Smashing magazine
                 </a>
             </p>
-            <p class="m-4"><a class="hover:text-white-dark" href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag">Jen Simmons - Layout Land!</a></p>
-            <p class="m-4"><a class="hover:text-white-dark" href="https://caniuse.com/">Can I use?</a></p>
+            <p class="m-4"><a class="link" href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag">Jen Simmons -
+                Layout Land!</a></p>
+            <p class="m-4"><a class="link" href="https://caniuse.com/">Can I use?</a></p>
         </div>
     </div>
 </main>
-
-<footer class="grid w-full h-footer bg-charcoal-dark text-shadow-footer">
-    <div class="grid h-full w-full grid-cols-md-footer grid-rows-md-footer justify-center justify-items-center">
+<footer class="grid w-full  bg-charcoal-dark text-shadow-footer">
+    <div class="grid h-full md:h-footer w-full md:grid-cols-footer md:grid-rows-footer justify-center justify-items-center">
         <div class="grid w-full h-full">
-            <div class="grid w-full h-full text-center items-center" >
+            <div class="grid w-full h-full text-center items-center">
                 <p>Get in touch with us in the address:
                     <a href="mailto:Themetalband@metalband.com">Themetalband@metalband.com</a>
                 </p>
@@ -64,27 +65,29 @@
                 <hr>
             </div>
         </div>
-        <div class="grid w-full h-full gap-0.5 grid-cols-md-footer-navbar">
+        <div class="grid w-full h-full gap-0.5 md:grid-cols-footer-navbar">
             <div class="h-100 w-100 bg-footer-bg bg-contain bg-no-repeat"></div>
-            <div class="grid gap-16 w-full h-full grid-cols-md-footer-links items-center justify-items-center p-0 text-lg">
+            <div
+                class="grid md:gap-16 w-full h-full md:grid-cols-footer-links items-center justify-items-center p-0 text-lg">
                 <a class="text-charcoal-lighter" href="./index.html">
-                    <i class="fas fa-house-damage m-2 hover:text-white-dark"></i> Home </a>
-                <a href="band_members.html" class="hover:text-white-dark">
-                    <i class="fas fa-users m-2 hover:text-white-dark"></i> Band members </a>
-                <a href="#" class="hover:text-white-dark">
-                    <i class="fas fa-fist-raised m-2 hover:text-white-dark"></i> The band </a>
-                <a href="#" class="hover:text-white-dark">
-                    <i class="fas fa-envelope m-2 hover:text-white-dark"></i> Contact </a>
+                    <i class="fas fa-house-damage icon-link"></i> Home </a>
+                <a href="band_members.html" class="link">
+                    <i class="fas fa-users icon-link"></i> Band members </a>
+                <a href="#" class="link">
+                    <i class="fas fa-fist-raised icon-link"></i> The band </a>
+                <a href="#" class="link">
+                    <i class="fas fa-envelope icon-link"></i> Contact </a>
             </div>
-            <div class="grid grid-cols-md-footer-social text-lg p-0 gap-x-16 justify-self-end justify-items-end">
-                <a class="justify-self-end self-center w-auto" href="https://www.google.com">
-                    <i class="fab fa-google-plus-g hover:text-white-dark"></i>
+            <div
+                class="grid grid-cols-3 md:grid-cols-footer-social text-lg p-5 md:gap-x-4 lg:gap-x-12 md:justify-self-end md:justify-items-end">
+                <a class="justify-self-center md:justify-self-end self-center w-auto" href="https://www.google.com">
+                    <i class="fab fa-google-plus-g icon-link"></i>
                 </a>
-                <a class="justify-self-end self-center w-auto" href="https://www.facebook.com">
-                    <i class="fab fa-facebook-f hover:text-white-dark"></i>
+                <a class=" justify-self-center md:justify-self-end self-center w-auto" href="https://www.facebook.com">
+                    <i class="fab fa-facebook-f icon-link"></i>
                 </a>
-                <a class="justify-self-end self-center w-auto" href="https://www.twitter.com">
-                    <i class="fab fa-twitter hover:text-white-dark"></i>
+                <a class=" justify-self-center md:justify-self-end self-center w-auto" href="https://www.twitter.com">
+                    <i class="fab fa-twitter icon-link"></i>
                 </a>
             </div>
         </div>
